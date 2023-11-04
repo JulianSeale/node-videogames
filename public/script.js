@@ -18,7 +18,7 @@ gameJSON.forEach((game) => {
 
   // Create an image element for the game's image
   let image = document.createElement("img");
-  image.src = "http://localhost:3000/"  + game.img;
+  image.src = "https://games-0oe9.onrender.com/"  + game.img;
   image.alt = game.name;
   
 
@@ -59,7 +59,7 @@ gameJSON.forEach((game) => {
 
 const getJSON = async () => {
     try {
-        let response = await fetch("http://localhost:3000/api/videogames");
+        let response = await fetch("https://games-0oe9.onrender.com/api/videogames");
         return await response.json();
     } catch(error) {
         console.log("trouble seeing json");
